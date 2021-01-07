@@ -1,5 +1,5 @@
 ---
-title: "【初心者向け】Herokuとgithubを連携して自動デプロイする方法"
+title: "Herokuとgithubを連携して自動デプロイする方法"
 emoji: "🐥"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [heroku, rabee]
