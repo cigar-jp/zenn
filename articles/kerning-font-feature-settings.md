@@ -3,7 +3,7 @@ title: "カーニングしてテキストを文字詰めする"
 emoji: "📝"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [font, css, rabee]
-published: false
+published: true
 ---
 
 # カーニングとは
