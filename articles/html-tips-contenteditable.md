@@ -2,7 +2,7 @@
 title: "HTML5のcontenteditable属性"
 emoji: "📝"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: [HTML5, contenteditable, rabee]
+topics: [HTML5, contenteditable]
 published: true
 ---
 

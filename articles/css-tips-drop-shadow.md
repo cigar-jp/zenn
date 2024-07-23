@@ -2,7 +2,7 @@
 title: "【CSS】影を付けるのに何でもbox-shadowを使っていないか!?"
 emoji: "👤"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: [css,rabee]
+topics: [css]
 published: true
 ---
 

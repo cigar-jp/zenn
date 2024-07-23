@@ -2,7 +2,7 @@
 title: "【ゼロパディング】`001`のように数値の桁を合わせる"
 emoji: "0️⃣"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: [zeropadding,javascript,rabee]
+topics: [zeropadding,javascript]
 published: true
 ---
 
