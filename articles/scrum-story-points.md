@@ -3,7 +3,7 @@ title: "ストーリーポイントとは何なのか"
 emoji: "🔢"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [scrum, cmnt]
-published: true
+published: false
 ---
 
 ## そもそもユーザーストーリーとは
