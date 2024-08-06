@@ -4,6 +4,7 @@ emoji: "📝"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [HTML5, contenteditable]
 published: true
+publication_name: "communitio"
 ---
 
 ## contenteditable属性とは

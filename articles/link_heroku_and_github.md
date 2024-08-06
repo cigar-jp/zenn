@@ -4,6 +4,7 @@ emoji: "🐥"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [heroku]
 published: true
+publication_name: "communitio"
 ---
 
 ## Herokuをgithubを連携するメリット

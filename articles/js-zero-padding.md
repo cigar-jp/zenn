@@ -4,6 +4,7 @@ emoji: "0️⃣"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [zeropadding,javascript]
 published: true
+publication_name: "communitio"
 ---
 
 # ゼロパディング(zero padding)とは

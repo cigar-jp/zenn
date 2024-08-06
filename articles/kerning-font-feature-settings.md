@@ -4,6 +4,7 @@ emoji: "📝"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [font, css]
 published: true
+publication_name: "communitio"
 ---
 
 # カーニングとは
