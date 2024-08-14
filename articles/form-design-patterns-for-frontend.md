@@ -44,7 +44,22 @@ publication_name: "communitio"
 ユーザーに負担をかけずに必要な情報を取得するためには、フォームの簡潔さが重要です。
 
 - **最小限の入力項目**: 最初に求める情報をメールアドレスとパスワードに限定し、その他の詳細情報は後から入力できるようにします。これにより、ユーザーがストレスなくサービスを利用開始できます。
-- **直感的な操作**: ユーザーが何を入力すればよいのかを直感的に理解できるよう、フォームの配置やラベルの使い方を工夫します。
+例えば、登録時に入力する内容はメールアドレスとパスワードのみにしておき、ユーザー情報はもっと後の必要なタイミングに入力してもらうようにする、などです。
+
+![](/images/resister-form.png =400x)
+
+```html
+<form action="/submit" method="post">
+  <label for="email">メールアドレス</label>
+  <input type="email" id="email" name="email" required>
+  
+  <label for="password">パスワード</label>
+  <input type="password" id="password" name="password" required>
+
+  <button type="submit">ログイン</button>
+</form>
+```
+
 
 ### **視覚的なヒント**
 
@@ -53,14 +68,34 @@ publication_name: "communitio"
 - **プレースホルダーの使い方**: プレースホルダーはシンプルなデザインを保ちながら、入力フィールドのスペースを有効に活用できます。しかし、プレースホルダーが入力中に消えることで、重要な情報が見えなくなる可能性があります。例えば、パスワードのルールをプレースホルダーに記載する代わりに、ラベルの下にサブラベルとして表示することが考えられます。
 - **`aria-describedby`の活用**: アクセシビリティを考慮し、`aria-describedby`属性を使用して入力フィールドとヒントを関連付けることで、スクリーンリーダーなどでも適切に情報が伝わるようにします。
 
+```html
+<form action="/submit" method="post">
+  <label for="email">メールアドレス</label>
+  <input type="email" id="email" name="email" placeholder="例: user@example.com" required>
+  
+  <label for="password">パスワード</label>
+  <input type="password" id="password" name="password" placeholder="8文字以上のパスワード" aria-describedby="password-help" required>
+  <small id="password-help">パスワードは8文字以上である必要があります。</small>
+
+  <button type="submit">ログイン</button>
+</form>
+```
+
+
 - **フロートラベル**
-    - UIライブラリ（例えばMUI）でよく見かけますが、本書では否定的に評価されています。
+    - UIライブラリ（例えば [MUI Text Field](https://mui.com/material-ui/react-text-field/) ）でよく見かけますが、本書では否定的に評価されています。
     - おしゃれに見えますが、スペース節約にはならず、入力済みのフィールドと誤解されるリスクがあります。
 
+    | 入力前 | 入力後 | 
+    | ---- | ---- |
+    | ![](/images/mui-text-field-empty.png =250x) | ![](/images/mui-text-field.png =250x) |
 
 - **フォームUIはフォームらしくあれ**
     - ユーザーが慣れ親しんだフォームのデザインを維持することが重要です。おしゃれさよりも、ユーザーが他のサイトで見慣れたデザインとの一貫性を重視すべきです。
     - 例えば、空のテキストボックスは四方を枠で囲んだデザインが一般的です。
+
+![](/images/mantine-text-input.png =400x)
+
 
 ## アクセシビリティの考慮
 
@@ -77,14 +112,18 @@ publication_name: "communitio"
 入力エラーが発生した場合には、具体的でわかりやすいエラーメッセージを提供します。
 
 - **明確なエラーメッセージ**: エラーメッセージは簡潔で明確にする必要があります。ユーザーに具体的な修正方法を示すと共に、平易な言葉を使って理解しやすくします。
-- **エラーメッセージの一貫性**: 例えば、「お名前を入力してください」というように、能動態でシンプルな表現を使い、ユーザーに行動を促すメッセージを心掛けます。
+- **エラーメッセージの一貫性**: 例えば、「名前を入力してください」というように、能動態でシンプルな表現を使い、ユーザーに行動を促すメッセージを心掛けます。
+
+| わかりやすい | わかりづらい | 
+| ---- | ---- |
+| ![](/images/mantine-text-input-error.png =250x) | ![](/images//mantine-text-input-error-duplicated.png =250x) |
 
 ### **プログレッシブエンハンスメント**
 
 プログレッシブエンハンスメントは、基本的な機能を全ユーザーに提供しながら、より高度な機能を利用できるユーザーには追加の体験を提供する戦略です。
 
 - **Next.js App Routerの活用**: Next.jsを使用する場合、App RouterとServer Actionsを活用することで、JavaScriptが無効な場合でもフォームが正しく動作するように設計できます。これにより、広範なユーザーに対応可能なフォームを実現できます。
-- **費用対効果の検討**: JavaScriptが無効なユーザーは少数（約0.5%）ですが、モダンCSSなどを使ったエンハンスメントも含め、どこまで対応するかはプロジェクトのコストとメリットを天秤にかける必要があります。
+- **費用対効果の検討**: JavaScriptが無効なユーザーは少数であり、モダンCSSなどを使ったエンハンスメントも含め、どこまで対応するかはプロジェクトのコストとメリットを天秤にかける必要があります。
 
 ## まとめ
 
