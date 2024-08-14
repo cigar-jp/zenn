@@ -46,7 +46,7 @@ publication_name: "communitio"
 - **最小限の入力項目**: 最初に求める情報をメールアドレスとパスワードに限定し、その他の詳細情報は後から入力できるようにします。これにより、ユーザーがストレスなくサービスを利用開始できます。
 例えば、登録時に入力する内容はメールアドレスとパスワードのみにしておき、ユーザー情報はもっと後の必要なタイミングに入力してもらうようにする、などです。
 
-![](/images/resister-form.png =400x)
+![](/images/form-design-patterns-for-frontend/resister-form.png =400x)
 
 ```html
 <form action="/submit" method="post">
@@ -88,13 +88,13 @@ publication_name: "communitio"
 
     | 入力前 | 入力後 | 
     | ---- | ---- |
-    | ![](/images/mui-text-field-empty.png =250x) | ![](/images/mui-text-field.png =250x) |
+    | ![](/images/form-design-patterns-for-frontend/mui-text-field-empty.png =250x) | ![](/images/form-design-patterns-for-frontend/mui-text-field.png =250x) |
 
 - **フォームUIはフォームらしくあれ**
     - ユーザーが慣れ親しんだフォームのデザインを維持することが重要です。おしゃれさよりも、ユーザーが他のサイトで見慣れたデザインとの一貫性を重視すべきです。
     - 例えば、空のテキストボックスは四方を枠で囲んだデザインが一般的です。
 
-![](/images/mantine-text-input.png =400x)
+![](/images/form-design-patterns-for-frontend/mantine-text-input.png =400x)
 
 
 ## アクセシビリティの考慮
@@ -116,7 +116,7 @@ publication_name: "communitio"
 
 | わかりやすい | わかりづらい | 
 | ---- | ---- |
-| ![](/images/mantine-text-input-error.png =250x) | ![](/images//mantine-text-input-error-duplicated.png =250x) |
+| ![](/images/form-design-patterns-for-frontend/mantine-text-input-error.png =250x) | ![](/images/form-design-patterns-for-frontend//mantine-text-input-error-duplicated.png =250x) |
 
 ### **プログレッシブエンハンスメント**
 
