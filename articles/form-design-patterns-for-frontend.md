@@ -2,7 +2,7 @@
 title: "フォームデザインパターン - フロントエンドエンジニアが知っておくべきこと -"
 emoji: "🤵🏻‍♂️"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: [ui, design patterns, form, cmnt]
+topics: [ui, design patterns, form]
 published: true
 publication_name: "communitio"
 ---

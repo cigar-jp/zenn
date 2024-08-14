@@ -2,7 +2,7 @@
 title: "ストーリーポイントとは何なのか"
 emoji: "🔢"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: [scrum, cmnt]
+topics: [scrum]
 published: true
 publication_name: "communitio"
 ---
