@@ -116,7 +116,7 @@ publication_name: "communitio"
 
 | わかりやすい | わかりづらい | 
 | ---- | ---- |
-| ![](/images/form-design-patterns-for-frontend/mantine-text-input-error.png =250x) | ![](/images/form-design-patterns-for-frontend//mantine-text-input-error-duplicated.png =250x) |
+| ![](/images/form-design-patterns-for-frontend/mantine-text-input-error.png =250x) | ![](/images/form-design-patterns-for-frontend/mantine-text-input-error-duplicated.png =250x) |
 
 ### **プログレッシブエンハンスメント**
 
