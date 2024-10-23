@@ -2,8 +2,9 @@
 title: "tailwindで子要素にクラスを指定したいときの書き方"
 emoji: "👋"
 type: "tech" 
-topics: [tailwind]
+topics: [tailwind css]
 published: true
+publication_name: "communitio"
 ---
 
 ## はじめに
