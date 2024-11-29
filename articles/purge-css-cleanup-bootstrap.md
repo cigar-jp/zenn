@@ -7,6 +7,16 @@ published: false
 publication_name: "communitio"
 ---
 
+## Purge CSSとは？
+**Purge CSS**は、使われていないCSSを検出して削除してくれる便利ツールです。
+
+### 主な特徴
+- **未使用CSSの削除**: プロジェクト内で使われていないCSSを自動で除去。
+- **軽量化**: CSSファイルのサイズを大幅に削減。
+- **パフォーマンス向上**: 無駄なスタイルが減るため、読み込みが速くなる。
+
+
+
 ## 背景
 Vue.jsとTypeScriptを使ったプロジェクトで、以下のような状況に陥っていました。
 
@@ -23,15 +33,6 @@ Vue.jsとTypeScriptを使ったプロジェクトで、以下のような状況�
 そこで、この問題を解決するためにPurge CSSを導入し、Bootstrapを削除しました。
 
 
-## Purge CSSとは？
-**Purge CSS**は、使われていないCSSを検出して削除するツールです。
-
-### 主な特徴
-- **未使用CSSの削除**: プロジェクト内で使われていないCSSを自動で除去。
-- **軽量化**: CSSファイルのサイズを大幅に削減。
-- **パフォーマンス向上**: 無駄なスタイルが減るため、読み込みが速くなる。
-
-
 ## 実践: Purge CSSでBootstrapを削除する
 
 ### プロジェクト環境
@@ -43,7 +44,7 @@ Vue.jsとTypeScriptを使ったプロジェクトで、以下のような状況�
 まず、Purge CSSを開発依存としてインストールします。
 
 ```bash
-npm install @fullhuman/postcss-purgecss --save-dev
+npm i -g purgecss
 ```
 
 ### 2. PostCSSの設定
@@ -64,8 +65,15 @@ module.exports = {
 };
 ```
 
-### 3. Vue CLIでの設定
-Vue CLIを使用している場合、PostCSS設定は自動的に適用されます。特に意識することなく動作するはずです。
+<!-- ### 3. Vue CLIでの設定
+Vue CLIを使用している場合、PostCSS設定は自動的に適用されます。特に意識することなく動作するはずです。 -->
+
+### 3. 実行
+```bash
+purgecss --css style.css --content index.html --output style.purged.css
+```
+オプションの --css は元のCSSファイル、--content は参照先のファイル、--output は書き出しファイルです。
+ファイル名、ファイルパスは作業環境に合わせてください。
 
 ### 4. CSSファイルの確認
 ビルド後のCSSファイルを確認して、未使用のBootstrapスタイルが削除されていることを確認します。
